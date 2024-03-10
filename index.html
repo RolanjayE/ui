@@ -5,48 +5,435 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page || Brand Name || Booking Reservation</title>
 
+    <!-- bootstrap css -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- bootstrap JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="assets/css/designSwiper.css">
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/desgn.css">
+
+
 </head>
 <body>
 
-
-    <header>
-        <div class="header-one">
-           <div class="container head-flex">
-                <p class="p1"><i class="fa-solid fa-phone"></i> +63 2 7755 7888</p>
-                <p class="p1"><i class="fa-regular fa-envelope"></i> RolanJayIsabida@gmail.com</p>
-           </div>
-        </div>
-    </header>
-
-    <div style=" background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/image/img3.jpeg');
-    background-size: cover;
-    background-position: center;" class="bg-container">
-        <div class="header-two">
-            <div class="container head-flex-two">
-                <span>LOGO</span>
-                <ul>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Register</a></li>
-                    <li><a href="">Login</a></li>
-                </ul>
+    <div class="container-fluid bg-dark" id="main-top">
+        <div class="row pt-2">
+            <div class="col d-flex justify-content-end">
+                <p style="font-size: 11px;" class="text-light fade-text me-4"><i class="fa-solid fa-phone me-2"></i>+6390 5157 8190</p>
+                <p style="font-size: 11px;" class="text-light"><i class="fa-solid fa-envelope me-2"></i> RolanJayIsabida46@gmail.com</p>
             </div>
         </div>
+    </div>
+    
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img style="width: 35px; height: 35px;" src="assets/image/logo2.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse header-a-style" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item"><a class="nav-link active text-uppercase" aria-current="page" href="#">Home</a> </li>
+                <li class="nav-item"><a class="nav-link text-uppercase" href="#" >explore</a></li>
+                <li class="nav-item"><a class="nav-link text-uppercase" href="#faq-id" >faq</a></li>
+                <li class="nav-item"><a class="nav-link text-uppercase" href="./about-us.html" >about us</a></li>
+                <li class="nav-item"><a class="nav-link text-uppercase" href="#location" >Location</a></li>
+                <li class="nav-item"><a class="nav-link text-uppercase" href="#" >feedback</a></li>
+
+                <li class="nav-item dropdown header-a-style">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> CATEGORIES</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-uppercase" href="#">ROOMS</a></li>
+                    <li><a class="dropdown-item text-uppercase" href="#">Cottages/Cabanas</a></li>
+                    <li><a class="dropdown-item text-uppercase" href="#">Tents/Glamping</a></li>
+                    <li><a class="dropdown-item text-uppercase" href="#">Event Spaces</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
+                </ul>
+                <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+          </div>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="assets/image/img2.jpg" class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption d-md-block c-con">
+                <h5 class="fs-1 fs-md-3 fs-lg-4 fs-xl-6">Seaside Escapes Made Simple – Reserve Your Slice of Paradise!</h5>
+                <p>Savor the sea breeze and book your beachfront escape effortlessly. Your ideal beach retreat is just a click away..</p>
+                <div class="btn-container">
+                    <a class="TWOBTN" href="">EXPLORE</a>
+                    <a class="ONEBTN" href="">ABOUT US</a>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="assets/image/img444.jpg" class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption d-md-block c-con">
+                <h5 class="fs-1 fs-md-3 fs-lg-4 fs-xl-6">Coastal Dreams Begin Here – Book Your Perfect Beach Getaway!</h5>
+                <p>Indulge in coastal luxury. Your beachfront escape starts with a simple reservation. Dive into your dream vacation.</p>
+                <div class="btn-container">
+                    <a class="TWOBTN" href="">EXPLORE</a>
+                    <a class="ONEBTN" href="">ABOUT US</a>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="assets/image/sample1.jfif" class="d-block w-100 c-img" alt="...">
+            <div class="carousel-caption d-md-block c-con">
+                <h5 class="fs-1 fs-md-3 fs-lg-4 fs-xl-6">Waves of Adventure Await – Secure Your Beachfront Bliss!</h5>
+                <p>Embark on a journey of sun, sand, and serenity. Don't miss out – reserve your beachfront haven today!</p>
+                <div class="btn-container">
+                    <a class="TWOBTN" href="">EXPLORE</a>
+                    <a class="ONEBTN" href="">ABOUT US</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    <div class="container mt-5">
+        <p class="fs-2 fw-bold text-center">ROOMS FEATURES</p>
+        <a href="" class="btn btn-outline-success d-block mx-auto">VISIT ROOMS</a>
+    </div>
+
+   <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+    <swiper-slide>
+      <img src=" https://swiperjs.com/demos/images/nature-1.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+    </swiper-slide>
+  </swiper-container>
+
+
+  <div class="bg-dark pb-4 pt-4" id="location">
+      <div class="container">
+        <div class="row grid-two">
+          <div style="overflow: hidden; height: 400px;" class="col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.5543950873944!2d125.08618347316629!3d8.827863791225667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33002efb842680ff%3A0xaa6b01647f4eca75!2sVilla%20Cristina&#39;s%20Resort!5e0!3m2!1sen!2sph!4v1709987098109!5m2!1sen!2sph" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col">
+            <p class="fs-2 fw-bold yellow mt-4">How To Get There</p>
+            <p class="fs-6 text-light"><i class="fa-solid fa-phone me-2 yellow"></i> 09051578190</p>
+            <p class="fs-6 text-light"><i class="fa-solid fa-envelope me-2 yellow"></i> RolanJayIsabida46@gmail.com || Bussness@gmail.com</p>
+            <p class="fs-6 text-light"><i class="fa-solid fa-location-arrow yellow"></i> Gingoog, Misamis Oriental, San Juan</p>
+            <img width="100%" height="190px" src="assets/image/intrance.jfif" alt="">
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  <div class="testimony bg-dark pt-4 pb-4">
+    <div class="container text-light pt-4">
+      <p class="fs-2 fw-bold text-center pt-4 pb-4 yellow">Guest Testimonials</p>
+      <div class="row">
+
+        <div class="col-sm-12 col-lg-6">
+          <div class="p-4 mb-3 white">
+            <blockquote class="blockquote text-center">
+              <p class="mb-0 fs-6"><span class="yellow fs-1">"</span> Booking our beach getaway through this reservation platform was an absolute breeze! The options were fantastic, and the process was so simple. Our vacation in Miami was a dream come true <br> <span class="yellow fs-1">"</span></p>
+              <footer class="blockquote-footer mt-3">ROLAN JAY ISABIDA</footer>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-6">
+          <div class="p-4 mb-3 white">
+            <blockquote class="blockquote text-center">
+              <p class="mb-0 fs-6"><span class="yellow fs-1">"</span> Booking our beach getaway through this reservation platform was an absolute breeze! The options were fantastic, and the process was so simple. Our vacation in Miami was a dream come true <br> <span class="yellow fs-1">"</span></p>
+              <footer class="blockquote-footer mt-3">ROLAN JAY ISABIDA</footer>
+          </blockquote>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+ <div class="contaier p-4" id="faq-id">
+
+   <p class="fs-2 fw-bold text-center pt-4 pb-4">Frequently Asked Questions</p>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            How do I make a reservation?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Can I modify or cancel my reservation?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            What payment methods are accepted?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Is my personal information secure during the reservation process?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            How can I retrieve my booking confirmation?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+
 
     </div>
 
-    <div class="bg-container">
+ </div>
 
+
+
+
+
+ <div class="about-us pt-4 pb-4">
+  <div class="container text-center">
+    <p class="fs-2 fw-bold text-center pt-4 pb-4 pt-4">Welcome Im CampanyName</p>
+    <p class="fs-6 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum minima odio perferendis suscipit repudiandae id quidem tempore laboriosam tempora earum minus at, facilis repellendus voluptate aliquid quibusdam quos commodi magni?</p>
+    <button class="btn btn-outline-success" type="submit">Learn More</button>
+  </div>
+</div>
+
+
+
+
+
+<div class="footers bg-dark">
+  
+ <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+  <footer class="text-center text-lg-start text-white" >
+    <div class="container p-4 pb-0">
+      <section class="">
+        <div class="row">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Company name </h6>
+            <p> Here you can use rows and columns to organize your footer
+              content. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. </p>
+          </div>
+          <hr class="w-100 clearfix d-md-none" />
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">CATEGORIES</h6>
+            <p><a class="text-white">ROOMS</a></p>
+            <p><a class="text-white">CATTAGE</a></p>
+            <p><a class="text-white">EVENT SPACE</a></p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> SAN JUAN GWAPO P-4</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+            <!-- Facebook -->
+            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998"href="#!"   role="button" ><i class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #55acee"
+               href="#!"
+               role="button"
+               ><i class="fab fa-twitter"></i
+              ></a>
+
+            <!-- Google -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #dd4b39"
+               href="#!"
+               role="button"
+               ><i class="fab fa-google"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #ac2bac"
+               href="#!"
+               role="button"
+               ><i class="fab fa-instagram"></i
+              ></a>
+
+            <!-- Linkedin -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #0082ca"
+               href="#!"
+               role="button"
+               ><i class="fab fa-linkedin-in"></i
+              ></a>
+            <!-- Github -->
+            <a
+               class="btn btn-primary btn-floating m-1"
+               style="background-color: #333333"
+               href="#!"
+               role="button"
+               ><i class="fab fa-github"></i
+              ></a>
+          </div>
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
     </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >LAWAY-LAWAY</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+</div>
+
+
+<div class="arrow-up text-center pt-3">
+  <a href="#main-top"><i class="fa-solid fa-arrow-up fs-5 fw-bold"></i></a>
+</div>
+
+
+
+
+
+     
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+ 
     
 </body>
 </html>
