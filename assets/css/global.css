@@ -13,6 +13,9 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
 
 
 p{
@@ -23,6 +26,7 @@ p{
 
 a {
     font-family: "Poppins", sans-serif;
+    text-decoration: none;
 }
 
 .c-item {
