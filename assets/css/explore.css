@@ -20,6 +20,10 @@
     display: flex;
 }
 
+.explore-container {
+    height: 400px;
+}
+
 .flex-center {
     display: flex;
     justify-content: center;
@@ -30,7 +34,6 @@
 
 .my-flex-two-wrap-reverse > div {
     width: 50%;
-    height: 55vh;
 }
 
 .my-flex-two-wrap-reverse > div {
