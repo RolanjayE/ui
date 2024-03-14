@@ -9,3 +9,12 @@
     object-fit: cover;
     filter: brightness(0.6);
 }
+
+.discount {
+    background-color: red;
+    color: white;
+    padding: 0.6rem;
+}
+.underline {
+    text-decoration: line-through;
+}
